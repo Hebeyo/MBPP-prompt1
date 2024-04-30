@@ -1,0 +1,21 @@
+"""Complete the function with better-performing Python code. Use efficient function calls and looping structures, use efficient algorithms, avoid unnecessary complexity and waste of resources, ensure that the code is concise, and make full use of language features."""
+'''Write a python function to find the cube sum of first n even natural numbers.
+'''
+
+def cube_Sum(n): 
+    sum = 0
+    for i in range(1,n + 1): 
+        sum += (2*i)*(2*i)*(2*i) 
+    return sum
+
+'''
+Standard answer: 
+def cube_Sum(n): 
+    sum = 0
+    for i in range(1,n + 1): 
+        sum += (2*i)*(2*i)*(2*i) 
+    return sum
+'''
+assert cube_Sum(2) == 72
+assert cube_Sum(3) == 288
+assert cube_Sum(4) == 800
